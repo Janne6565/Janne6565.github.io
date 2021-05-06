@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+    background-size: 500% 500%;
+    animation: bg infinite linear 15s;
+
+}
+
+.firstCont{
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    margin: auto;
+}
+
+.firstCont > section{
+    color: lightgray;
+    font-family: 'Montserrat', sans-serif;
+    width: 50%;
+    margin: auto;
+    height: 100%;
+    text-align: left;
+    display: flex;
+}
+
+.firstCont > section > h1{
+    margin: auto;
+    font-size: 70px;
+}
+
+.secondCont{
+    text-align: center;
+}
+
+.gallery{
+    margin: auto;
+    width: 1500px;
+    height: 500px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    border: 5px lightgray solid;
+    border-radius: 20px;
+    background-color: lightgray;
+    box-shadow: gray 0 0 10px 1px;
+}
+
+.gallery > .galleryItem{
+    background-color: lightgray;
+    width: 400px;
+    height: 95%;
+    margin: 20px;
+    border-radius: 50px;
+    text-align: center;
+    display: inline-block;
+    box-shadow: gray 0 0 10px 1px;
+}
+
+.gallery > .galleryItem > a > .galleryImage{
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 70%;
+}
+
+.gallery > .galleryItem > a > .galleryText{
+    color: black;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 25px;
+}
+
+.gallery > .galleryItem > a > .galleryTextSmall{
+    font-size: 15px;
+    font-family: 'Noto Sans JP', sans-serif;
+    width: 70%;
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+@keyframes bg{
+    0%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 100% 100%;
+    }
+    100%{
+        background-position: 0 0;
+    }
+}
+
